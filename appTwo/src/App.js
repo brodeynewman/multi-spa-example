@@ -16,7 +16,7 @@ class App extends React.Component {
       <div style={styles.container}>
         <Sidebar />
         <div style={styles.content}>
-          Hello, this is App Two being rendered from a different s3 bucket.
+          Hello, this is App Two being rendered from a different s3 bucket. Nice!
         </div>
       </div>
     )
