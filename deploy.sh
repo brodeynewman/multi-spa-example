@@ -18,8 +18,8 @@ function deploy {
 
   echo "Deploying applications to s3..."
 
-  aws s3 sync ./appOne/dist s3://$S3_APP_ONE_BUCKET
-  aws s3 sync ./appTwo/dist s3://$S3_APP_TWO_BUCKET
+  aws s3 sync ./appOne/dist s3://$S3_APP_ONE_BUCKET/appOne
+  aws s3 sync ./appTwo/dist s3://$S3_APP_ONE_BUCKET/appTwo
 
   echo "Successfully finished deploy process!"
 }

@@ -16,7 +16,10 @@ class App extends React.Component {
       <div style={styles.container}>
         <Sidebar />
         <div style={styles.content}>
-          Hello, this is App One being rendered from a different s3 bucket.
+          <h2>App One</h2>
+          <p>
+            This application is being served through s3 via an nginx reverse-proxy. This app lives in a subdirectory inside of s3.
+          </p>
         </div>
       </div>
     )

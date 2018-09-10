@@ -27,13 +27,17 @@ const styles = {
     marginBottom: 15,
     marginTop: 25,
   },
+  logoLink: {
+    textDecoration: 'none',
+    color: '#fff',
+  },
 };
 
 const Sidebar = () => (
   <div style={styles.nav}>
-    <div style={styles.logo}>Platform</div>
-    <a style={styles.link} href="/foo/bar">Go to app one</a>
-    <a style={styles.inactiveLink} href="/foo/baz">Go to app two</a>
+    <div style={styles.logo}><a style={styles.logoLink} href="/appOne">Platform</a></div>
+    <a style={styles.link} href="/appOne">Go to app one</a>
+    <a style={styles.inactiveLink} href="/appTwo">Go to app two</a>
   </div>
 );
 
