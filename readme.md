@@ -1,5 +1,7 @@
 # Multi SPA example
 
+An example can be found [here](http://ec2-18-191-152-164.us-east-2.compute.amazonaws.com/).
+
 ## Why?
 
 Since single SPA's are usually deployed and served as static assets, deployment processes are built around re-deploying the single static bundle to a particular server.
@@ -32,5 +34,3 @@ Both /appOne and /appTwo directories contain two different applications.
 You can see the code for the server.conf file inside of nginx [here](https://github.com/brodeynewman/multi-spa-example/blob/master/nginx.conf).
 
 The *location* blocks describe the routes which we want to reverse-proxy to s3 on.
-
-
