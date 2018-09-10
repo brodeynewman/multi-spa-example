@@ -26,8 +26,8 @@ Not only does this work for a reverse-proxy, but allows for load balancing in th
 
 Both /appOne and /appTwo directories contain two different applications.
 
-*deploy.sh* - [build] command contains logic to run the webpack builds.
-*deploy.sh* - [deploy] command contains logic to deploy the /dist folders to the subdirectories in the S3 bucket
+- *deploy.sh* - [build] command contains logic to run the webpack builds.
+- *deploy.sh* - [deploy] command contains logic to deploy the /dist folders to the subdirectories in the S3 bucket
 
 You can see the code for the server.conf file inside of nginx [here](https://github.com/brodeynewman/multi-spa-example/blob/master/nginx.conf).
 
