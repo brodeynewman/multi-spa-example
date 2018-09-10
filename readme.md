@@ -1,4 +1,4 @@
-# Multi SPA example using reverse-proxying with nginx to amazon s3
+# Multi SPA example
 
 ## Why?
 
@@ -30,3 +30,7 @@ Both /appOne and /appTwo directories contain two different applications.
 *deploy.sh* - [deploy] command contains logic to deploy the /dist folders to the subdirectories in the S3 bucket
 
 You can see the code for the server.conf file inside of nginx [here](https://github.com/brodeynewman/multi-spa-example/blob/master/nginx.conf).
+
+The *location* blocks describe the routes which we want to reverse-proxy to s3 on.
+
+
